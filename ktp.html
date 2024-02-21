@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KTP Buatan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>KTP Buatan</h1>
+        <form action="proses.php" method="post">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" name="nama" id="nama" required>
+            <br>
+            <label for="nik">NIK:</label>
+            <input type="number" name="nik" id="nik" required>
+            <br>
+            <label for="tempat_lahir">Tempat Lahir:</label>
+            <input type="text" name="tempat_lahir" id="tempat_lahir" required>
+            <br>
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" name="tanggal_lahir" id="tanggal_lahir" required>
+            <br>
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select name="jenis_kelamin" id="jenis_kelamin">
+                <option value="Laki-laki">Laki-laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+            <br>
+            <label for="alamat">Alamat:</label>
+            <textarea name="alamat" id="alamat" required></textarea>
+            <br>
+            <label for="agama">Agama:</label>
+            <select name="agama" id="agama">
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+            </select>
+            <br>
+            <label for="pekerjaan">Pekerjaan:</label>
+            <input type="text" name="pekerjaan" id="pekerjaan" required>
+            <br>
+            <label for="status_perkawinan">Status Perkawinan:</label>
+            <select name="status_perkawinan" id="status_perkawinan">
+                <option value="Belum Kawin">Belum Kawin</option>
+                <option value="Kawin">Kawin</option>
+            </select>
+            <br>
+            <label for="golongan_darah">Golongan Darah:</label>
+            <select name="golongan_darah" id="golongan_darah">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="AB">AB</option>
+                <option value="O">O</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Buat KTP</button>
+        </form>
+    </div>
+</body>
+</html>
