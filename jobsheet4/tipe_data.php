@@ -2,14 +2,14 @@
 $a = 10;
 $b = 5;
 $c = $a + 5;
-$d = $b + (10*5);
+$d = $b + (10 * 5);
 $e = $d - $c;
 
 echo "Variabel a: {$a} <br>";
-echo "Variabel a: {$a} <br>";
-echo "Variabel a: {$a} <br>";
-echo "Variabel a: {$a} <br>";
-echo "Variabel a: {$a} <br>";
+echo "Variabel b: {$a} <br>";
+echo "Variabel c: {$a} <br>";
+echo "Variabel d: {$a} <br>";
+echo "Variabel e: {$a} <br>";
 
 var_dump($e);
 
@@ -24,7 +24,7 @@ echo "IPA : {$nilaiIPA} <br>";
 echo "Bahasa Indonesia : {$nilaiBahasaIndonesia} <br>";
 echo "Rata-rata : {$rataRata} <br>";
 
-var_dump($ratarata);
+var_dump($rataRata);
 
 $apakahSiswaLulus = true;
 $apakahSiswaSudahUjian = false;
@@ -32,4 +32,19 @@ $apakahSiswaSudahUjian = false;
 var_dump($apakahSiswaLulus);
 echo "<br>";
 var_dump($apakahSiswaSudahUjian);
+
+$namaDepan = "Ibnu";
+$namaBelakang = 'Jakaria';
+
+$namaLengkap = "{$namaDepan} {$namaBelakang}";
+$namaLengkap2 = $namaDepan . ' ' . $namaBelakang;
+
+echo "Nama Depan: {$namaDepan} <br>";
+echo 'Nama Belakang: ' . $namaBelakang . '<br>';
+
+echo $namaLengkap;
+
+$listMahasiswa = ["Wahid Abdullah", "Elmo Bachtiar", "Lendis Fabri"];
+echo $listMahasiswa[0];
 ?>
+
